@@ -1,5 +1,6 @@
 import styled,{css} from 'styled-components';
-
+import { StyleSheetManager } from 'styled-components';
+import isPropValid from '@emotion/is-prop-valid';
 const subColor='grey';
 const mainColor='black';
 
@@ -48,5 +49,9 @@ margin: 25px 0;
   }
 `;
 
-
-  
+// Use StyleSheetManager to filter out unknown props
+export const StyledComponentsWrapper = ({ children }) => (
+  <StyleSheetManager shouldForwardProp={prop => isPropValid(prop)}>
+    {children}
+  </StyleSheetManager>
+);

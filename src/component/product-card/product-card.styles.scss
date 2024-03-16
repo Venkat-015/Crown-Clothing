@@ -1,16 +1,17 @@
 .product-card-container {
     width: 100%;
-    display: flex;
+    display:flex;
     flex-direction: column;
-    border: 1px solid black;
-    height: 420px;
+    height: 360px;
     align-items: center;
     position: relative;
     img {
       width: 100%;
-      height: 95%;
+      height: 90%;
       object-fit: cover;
       margin-bottom: 5px;
+      border: 1px solid black;
+      
     }
   
     button {
@@ -34,15 +35,32 @@
   
     .footer {
       width: 100%;
-      height: 5%;
+      height: 6%;
+      //font-weight:549;
       display: flex;
-      justify-content: space-between;
+      margin-top: 3px;
+      justify-content:space-between;
       font-size: 18px;
-      
+      font-weight: 550;
+      position: relative;
+      //background-color: rgb(5, 245, 237);
+      background: linear-gradient(to bottom right, #80e1e8, #cbef02);
+      animation: pulse 2s infinite alternate; /* Pulsating animation */
+
+@keyframes pulse {
+    0% {
+        background: linear-gradient(to bottom right, #80e1e8, #cbef02);
+    }
+    100% {
+        background: linear-gradient(to bottom right, #cbef02, #80e1e8);
+    }
+}
+      border:1px solid black;
   
       .name {
         width: 90%;
         margin-bottom: 15px;
+
       }
   
       .price {
