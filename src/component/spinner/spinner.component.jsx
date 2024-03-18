@@ -1,5 +1,5 @@
 import {SpinnerContainer,SpinnerOverlay} from './spinner.styles.jsx';
-export const Spinner=()=>{
+ const Spinner=()=>{
     <SpinnerOverlay>
         <SpinnerContainer />
     </SpinnerOverlay>
