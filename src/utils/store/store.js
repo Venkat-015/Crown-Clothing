@@ -8,7 +8,7 @@ import logger from 'redux-logger';
 const persistConfig={
     key:'root',
     storage:storage,
-    blacklist:['user'],
+    whitelist:['cart'],
 };
 const persistedReducer=persistReducer(persistConfig,rootReducer);
 
