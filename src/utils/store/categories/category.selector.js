@@ -12,7 +12,7 @@ export const selectCategoriesMap=createSelector(
     return acc;
   },{}));
 
-
+export const selectCategoriesIsLoading=createSelector([selectCategoryReducer],(categoriesSlice)=>categoriesSlice.loading);
 
 /*export const selectCategories = (state) => state.categories.categories;
 
