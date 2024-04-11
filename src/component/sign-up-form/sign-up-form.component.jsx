@@ -28,7 +28,8 @@ try{
 }
 catch(error){
     if(error.code==='auth/email-already-in-use'){
-        alert("User already exists, Email in Use")
+        alert("User already exists, Email in Use");
+        resetFormFields();
     }
 console.log('User Creation encountered an error ',error);
 }
@@ -46,7 +47,7 @@ console.log('User Creation encountered an error ',error);
              <FormInput label="Display Name" type="text" required onChange={handleChange} name="displayName" value={displayName}/>
              <FormInput label="Email" type="email" required onChange={handleChange} name="email" value={email}/>
              <FormInput label="Password" type="password" required onChange={handleChange} name="password" value={password}/>
-             <FormInput label="Confirm Password"type="password" required onChange={handleChange} name="confirmPassword" value={confirmPassword} />
+             <FormInput label="Confirm Password" type="password" required onChange={handleChange} name="confirmPassword" value={confirmPassword} />
              <Button type='submit'>Sign Up </Button>
             </form>
         </div>
