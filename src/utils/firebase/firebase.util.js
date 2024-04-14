@@ -79,7 +79,7 @@ const firebaseConfig = {
             console.log('error creating the user',error.message);
           }
       }
-      return userDocRef;
+      return userSnapshot;
 
   };
 
