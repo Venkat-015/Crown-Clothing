@@ -51,5 +51,16 @@ export const InvertedButton = styled(BaseButton)`
 export const LoadingSpinner =styled(SpinnerContainer)`
   width: 30px;
   height: 30px;
-  
+  const [showSpinner, setShowSpinner] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSpinner(false);
+    }, 10000); // Remove spinner after 10 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return showSpinner ? <SpinnerContainer /> : null;
+};
 `;
