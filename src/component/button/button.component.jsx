@@ -18,7 +18,7 @@ import {
       [BUTTON_TYPE_CLASSES.inverted]: InvertedButton,
     }[buttonType]);
   
-  const Button = ({ children, buttonType, isLoading = Boolean, ...otherProps }) => {
+  const Button = ({ children, buttonType, isLoading =false, ...otherProps }) => {
     const CustomButton = getButton(buttonType);
     return (
       <CustomButton disabled={isLoading} {...otherProps}>
