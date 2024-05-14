@@ -1,4 +1,5 @@
 import styled,{css} from 'styled-components';
+import { ReactNode } from 'react';
 import { StyleSheetManager } from 'styled-components';
 import isPropValid from '@emotion/is-prop-valid';
 const subColor='grey';
@@ -9,7 +10,10 @@ top: -15px;
 font-size: 12px;
 color: ${mainColor};
 `;
-export const FormInputLabel=styled.label`
+type FormInputLabelProps={
+  shrink?:boolean;
+}
+export const FormInputLabel=styled.label<FormInputLabelProps>`
 color: ${subColor};
     font-size: 16px;
     font-weight: normal;
@@ -49,8 +53,11 @@ margin: 25px 0;
   }
 `;
 
+interface StyledComponentsWrapperProps {
+  children: ReactNode;
+}
 // Use StyleSheetManager to filter out unknown props
-export const StyledComponentsWrapper = ({ children }) => (
+export const StyledComponentsWrapper:React.FC<StyledComponentsWrapperProps> = ({ children }) => (
   <StyleSheetManager shouldForwardProp={prop => isPropValid(prop)}>
     {children}
   </StyleSheetManager>
