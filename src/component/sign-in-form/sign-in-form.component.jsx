@@ -1,8 +1,8 @@
 import { useState} from "react";
 import { useDispatch } from "react-redux";
 import FormInput from "../form-item/form-item.component";
-import Button, {BUTTON_TYPE_CLASSES} from "../button/button.component.jsx";
-import { googleSignInStart,emailSignInStart} from "../../utils/store/user/user.action.js";
+import Button, {BUTTON_TYPE_CLASSES} from "../button/button.component";
+import { googleSignInStart,emailSignInStart} from "../../utils/store/user/user.action";
 import './sign-in-form.styles.scss'
 const defaultFormFields={
     email:'',
