@@ -63,8 +63,40 @@ min-width: 30%;
     &:last-child {
       margin-left: 7.5px;
     }
-    @media screen and (max-width:800px){
-      height:200px;
-    
+    @media screen and (max-width: 800px) {
+      height: 200px;
+      min-width: 45%;
+      margin: 0 5px 10px;
+      ${Body} {
+        height: 80px;
+        padding: 0 15px;
+  
+        h2 {
+          font-size: 18px;
+        }
+  
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  
+    @media screen and (max-width: 600px) {
+      height: 180px;
+      min-width: 100%;
+      margin: 0 0 10px;
+  
+      ${Body} {
+        height: 70px;
+        padding: 0 10px;
+  
+        h2 {
+          font-size: 16px;
+        }
+  
+        p {
+          font-size: 12px;
+        }
+      }
     }
 `;

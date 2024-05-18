@@ -7,7 +7,7 @@ import { selectCurrentUser } from '../../../utils/store/user/user.selector';
 import { selectIsCartOpen } from '../../../utils/store/cart/cart.selector';
 import {ReactComponent as CrownLogo } from '../../../assets/crown.svg';
 import { signOutStart } from '../../../utils/store/user/user.action';
-import {NavigationContainer,LogoConatiner,NavLinks,NavLink}from './navigation.styles';
+import {NavigationContainer,LogoContainer,NavLinks,NavLink}from './navigation.styles';
 const Navigation=()=>{
   const dispatch=useDispatch();
   const currentUser=useSelector(selectCurrentUser);
@@ -16,9 +16,9 @@ const Navigation=()=>{
     return(
       <Fragment>
         <NavigationContainer>
-            <LogoConatiner to='/'>
+            <LogoContainer to='/'>
             <CrownLogo className='logo'/>
-            </LogoConatiner>
+            </LogoContainer>
             <NavLinks>
             <NavLink to='/shop'>SHOP</NavLink>
             {currentUser ?(

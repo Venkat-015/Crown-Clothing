@@ -7,6 +7,7 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
   }
   
   code {
@@ -20,3 +21,4 @@ body {
   *{
     box-sizing: border-box;
   }`
+  export default createGlobalStyle;
