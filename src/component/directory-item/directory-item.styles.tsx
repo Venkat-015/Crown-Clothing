@@ -65,11 +65,17 @@ min-width: 30%;
     }
     @media screen and (max-width: 800px) {
       height: 200px;
-      min-width: 45%;
-      margin: 0 5px 10px;
+      min-width: 100%;
+      margin: 0px 5px 10px;
+      &:last-child {
+        margin-left:6px;
+   /* Reset margin for the last container */
+      }
+
       ${Body} {
         height: 80px;
         padding: 0 15px;
+        
   
         h2 {
           font-size: 18px;
