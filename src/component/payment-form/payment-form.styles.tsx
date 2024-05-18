@@ -22,6 +22,12 @@ export const FormContainer = styled.form`
     min-width:400px;
     
 }
+@media screen and (max-width:400px){
+  margin:50px;
+  margin-top:15px;
+  min-width:300px;
+  
+}
 `;
 
 export const PaymentButton = styled(Button)`
