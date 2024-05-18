@@ -5,7 +5,6 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import {Elements} from '@stripe/react-stripe-js';
 import App from './App';
-import './index.scss';
 import reportWebVitals from './reportWebVitals';
 import { store,persistor } from './utils/store/store';
 import { stripePromise } from './utils/stripe/stripe';
