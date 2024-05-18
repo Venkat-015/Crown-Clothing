@@ -3,4 +3,16 @@
     justify-content: space-between;
     width:900px;
     margin:30px auto;
+    @media screen and (max-width: 800px) {
+        display:inline-block;
+        width: 800px;
+        margin-left: 0px;
+        margin-right: 50px;
+        padding-right: 30px;
+        position: relative;
+        left: 0;
+        margin:30px 0;
+        justify-content: space-between;
+
+    }
 }
