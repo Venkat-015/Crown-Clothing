@@ -88,14 +88,14 @@ export const Name = styled.span`
   white-space: nowrap;
   text-overflow: ellipsis;
   @media screen and (max-width: 800px){
-    font-size:15.5px;
+    font-size:14px;
   }
 `;
 
 export const Price = styled.span`
   width: 10%;
   @media screen and (max-width: 800px){
-    font-size:15.5px;
+    font-size:14px;
     margin-right:2px;
 
   }
