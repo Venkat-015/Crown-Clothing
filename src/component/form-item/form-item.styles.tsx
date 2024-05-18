@@ -60,6 +60,7 @@ export const Group = styled.div`
 
   @media screen and (max-width: 800px) {
     margin: 25px 0; /* Adjust margin for smaller screens */
+    display:flex;
   }
 `;
 

@@ -91,6 +91,8 @@ min-width: 30%;
       height: 180px;
       min-width: 100%;
       margin: 0 0 10px;
+      &:last-child {
+        margin-left:1px;
   
       ${Body} {
         height: 70px;
