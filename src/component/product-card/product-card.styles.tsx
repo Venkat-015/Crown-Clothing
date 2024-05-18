@@ -88,15 +88,20 @@ export const Name = styled.span`
   white-space: nowrap;
   text-overflow: ellipsis;
   @media screen and (max-width: 800px){
-    font-size:14px;
+    font-size:15px;
   }
+  @media screen and (max-width: 400px){
+    font-size:11px;}
 `;
 
 export const Price = styled.span`
   width: 10%;
   @media screen and (max-width: 800px){
-    font-size:14px;
+    font-size:15px;
     margin-right:2px;
-
+  }
+  @media screen and (max-width: 400px){
+    font-size:11px;
+    margin-right:2px;
   }
 `;
