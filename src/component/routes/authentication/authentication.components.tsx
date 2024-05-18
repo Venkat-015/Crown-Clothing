@@ -12,7 +12,7 @@ const Authentication =()=>{
     
     return(
 <div className='authentication-container'>
-    <SignInForm />
+    <SignInForm /><br />
     <SignUpForm />
 </div>
     )
