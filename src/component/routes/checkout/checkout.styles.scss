@@ -25,8 +25,12 @@
       @media screen and (max-width: 400px) {
         width: 100%;
         margin-top: 10px;
-        font-size:8px;}
+        font-size:12px;}
     }
+    @media screen and (max-width: 300px) {
+      width: 100%;
+      margin-top: 10px;
+      font-size:10px;}
   
     .total {
       margin-top: 40px;
